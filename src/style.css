@@ -1,0 +1,55 @@
+#main{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 'header header header'
+                         'photo info info'
+                         'footer footer footer';
+    grid-gap: 5px;
+}
+#title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    grid-area: header;
+    border-radius: 5px;
+    background-color: rgb(171, 171, 245);
+    text-align: center;
+}
+#img-div{
+    grid-area: photo;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(181, 215, 253);
+    display: grid;
+    align-content: center;
+    text-align: center;
+    align-self: auto;
+}
+#tribute-info{
+    padding: 10px;
+    font-size: larger;
+    grid-area: info;
+    border-radius: 5px;
+    background-color: rgb(183, 241, 255);
+    display: grid;
+    align-content: center;
+    justify-content: left;
+    align-self: auto;
+}
+#link{
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 900;
+    grid-area: footer;
+    color: crimson;
+    border-radius: 5px;
+    background-color: rgb(45, 46, 43);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#link a{
+    color: blueviolet;
+}
